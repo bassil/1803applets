@@ -21,7 +21,7 @@ v = np.array([x,y])
 bounds = 10
 
 ## Create a "matrix vector plot" object
-p = Matrix_Vector(lower, upper, A, v)
+p = Matrix_Vector(bounds, A, v)
 
 ## Show the plot
 p.show()

@@ -36,9 +36,9 @@ class Matrix_Vector:
 
 		# We draw the lines x = 0 and y = 0
 		self.ax.axhline(y=0, color = 'k')
-		plt.xticks(np.arange(self.lower, self.upper+1, step=1))
+		plt.xticks(np.arange(-self.bounds, self.bounds+1, step=1))
 		self.ax.axvline(x=0, color = 'k')
-		plt.yticks(np.arange(self.lower, self.upper+1, step=1))
+		plt.yticks(np.arange(-self.bounds, self.bounds+1, step=1))
 		self.ax.set_axisbelow(True)
 		self.ax.grid()
 
@@ -129,10 +129,4 @@ class Matrix_Vector:
 	def show(self):
 		plt.show()
 
-# A = np.array([[1, 1],[1, 0]])
-# v = np.array([1,1])
-# lower = -10
-# upper = 10
-# p = Matrix_Vector(lower, upper, A, v)
-# p.show()
 
