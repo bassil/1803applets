@@ -2,8 +2,6 @@ from matplotlib.widgets import Slider, CheckButtons # import the Slider widget
 
 import numpy as np
 import matplotlib.pyplot as plt
-from math import pi
-
 
 class Matrix_Vector:
 	def __init__(self, bounds, A, v):
